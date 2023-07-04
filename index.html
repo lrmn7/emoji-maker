@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="author" content="L RMN" />
+    <meta property="og:title" content="Emoji Maker" />
+    <meta property="og:image" content="https://emoji-maker.is-a.fun/banner.png" />
+    <meta property="description" content="Generate your own Fluent Emojis!" />
+    <meta property="og:description" content="Generate your own Fluent Emojis!" />
+    <meta property="og:url" content="https://emoji-maker.is-a.fun/" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:creator" content="@romanromannya" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Emoji Maker</title>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=<%= VITE_GTAG_ID %>"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', '<%= VITE_GTAG_ID %>');
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
